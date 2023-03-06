@@ -1,8 +1,11 @@
 START TRANSACTION;
 
 DROP DATABASE IF EXISTS MeteoVelletri;
+SELECT 'DROP Database effettuato';
 CREATE DATABASE MeteoVelletri;
-USE Meteo;
+SELECT 'CREATE Database effettuato';
+USE MeteoVelletri;
+SELECT 'Database selezionato';
 
 CREATE TABLE Rilevazioni2023(
 	id INT AUTO_INCREMENT PRIMARY KEY,
@@ -11,10 +14,12 @@ CREATE TABLE Rilevazioni2023(
 	pressione DECIMAL(6,1) NOT NULL,
 	umidita INT NOT NULL,
 	direzioneVento ENUM('N','NE','E','SE','S','SW','W','NW') NOT NULL,
-	ventoKm-h INT NOT NULL
+	ventoKm_h INT NOT NULL
 );
 
-INSERT INTO Rilevazioni2023(data,temperatura,pressione,umidita,direzioneVento,ventoKm-h)
+SELECT 'TABELLA Rilevazioni2023 CREATA';
+
+INSERT INTO Rilevazioni2023(data,temperatura,pressione,umidita,direzioneVento,ventoKm_h)
 VALUES 	('2022-10-18 09:00','24','995.4','59','NE','2'),
 		('2022-10-19 09:00','20','989.3','77','W','3'),
 		('2022-10-20 09:00','22','989.4','57','S','2'),
