@@ -39,18 +39,6 @@
             </div>
           </nav>
 
-
-
-
-
-
-
-
-
-
-
-
-
           <?php 
             require_once "controller/funzioni.php";
             

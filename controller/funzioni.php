@@ -129,7 +129,7 @@
         $ciphering = "AES-128-CTR";
         $decryption_iv = '1234567891011121';
         $options = 0;
-        $decryption=openssl_decrypt ($encryption, $ciphering, 
+        $decryption=openssl_decrypt($encryption, $ciphering, 
         $key, $options, $decryption_iv);
         return $decryption;
     }
