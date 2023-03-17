@@ -72,7 +72,7 @@
 
         $output = "";
         $temp = $row["temperatura"];
-       
+        $temp = 35;
         if( $temp < 10){
             $imgTemperatura = "images/temperatura-freddo.png";
         }else{
@@ -90,7 +90,7 @@
                         <div class="container">
                             <div class="row mt-5 mb-5 justify-content-between">
                                 <div class="col-sm-12 col-md-5 col-lg-3  text-center shadow-lg rounded mb-5 me-1 pt-3 pd-3 pe-3">
-                                    <img class="img-fluid mb-3 rounded shadow-lg" src="images/calendario2.webp" alt="Calendario">
+                                    <img class="img-fluid mb-3 rounded-circle shadow-lg" src="images/calendario2.webp" alt="Calendario">
                                     <p><strong>Data: </strong> $dataRilevazione <strong class="ms-4">Ora: </strong> $oraRilevazione</p>                                    
                                 </div>
                                 <div class="col-sm-12 col-md-5 col-lg-3 text-center shadow-lg rounded mb-5 me-1 pt-3 pd-3 pe-3">

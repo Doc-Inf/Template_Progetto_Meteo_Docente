@@ -1,3 +1,75 @@
 .bordo{
     border: 1px solid black;
 }
+
+#mainTitle{
+    font-size:3rem;
+    margin-left:30%;
+}
+
+@media screen and (min-width:600px) and (max-width:799px){
+    #mainTitle{
+        margin-left:0px;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1000px){
+    #mainTitle{
+        margin-left:5%;
+    }
+}
+
+@media screen and (max-width:599px){
+    
+    #loginForm{
+        display: inline-block;       
+        width:250px;
+        margin:auto;
+    }
+
+    .inlineBlockLabel{
+        display:inline-block;
+        width:80px;
+    }  
+    .inputForm{
+        display:inline-block;
+        width:200px;
+        margin-bottom:0.5rem;
+        margin-right:0px;
+    }
+    .formRow{
+        display:inline-block;
+        width:300px;
+    } 
+    .submitRight{
+        position:absolute;
+        top:0px;
+        right:0px;    
+    } 
+    #mainTitle{
+        font-size:3rem;
+        margin-top:2rem;
+        margin-left:0px;
+    }
+}
+
+@media screen and (min-width:600px){
+    .loginForm{
+        position:absolute;
+        top: 0px;
+        right: 0px;
+    }
+    
+    .inlineBlockLabel{
+        display:inline-block;
+        width:80px;
+    }
+    
+    .submitRight{
+        position:absolute;
+        right:0px;    
+    }
+    
+}
+
+
